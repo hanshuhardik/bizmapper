@@ -162,7 +162,7 @@ app.post("/api/analyze", async (req, res) => {
         },
       ],
       temperature: 0.7,
-      max_tokens: 1024,
+      max_tokens: 4096,
     });
 
     const text = completion.choices[0].message.content;
